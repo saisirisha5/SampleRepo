@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Hib.hql.Employee" table = "Employee">
+      
+      <meta attribute = "class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name = "eno" type = "int" column = "e_no">
+         <generator class="increment"/>
+      </id>
+      
+      <property name = "ename" column = "e_name" type = "string"/>
+      <property name = "edept" column = "e_dept" type = "string"/>
+      <property name = "esal" column = "e_sal" type = "int"/>
+      
+   </class>
+</hibernate-mapping>
